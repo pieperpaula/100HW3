@@ -1,0 +1,63 @@
+/*
+Books
+	BookID
+    Title
+    AuthorID
+    GenreID
+    AuthRoyalties
+    PubRoyalties
+    PublisherID
+    EditorID
+    Year
+    Price
+    
+Authors
+	AuthorID
+	Name 
+    
+    
+Genres
+	GenreID
+	Name
+    
+Publishers
+	PublisherID
+    Name
+    
+Editors
+    EditorID
+    Name
+    
+Orders
+	OrderID
+    CustomerID
+    BookID
+    
+Customers
+	CustomerID
+    Location 
+    Name
+
+
+*/
+
+/*
+BookID
+AuthorID
+PublisherID
+GenreID
+EditorID
+OrderID
+CustomerID
+*/
+
+/* 
+Authors,Books, 1:N
+Publishers, Authors, 1:N
+Genres, Authors, 1:N
+Publishers, Genres, N:N
+Publishers, Books, 1:N
+Books, Genres, 1:1
+Orders, BookID, 1:N
+Orders, CustomerID, 1:1
+*/
