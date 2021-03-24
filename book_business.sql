@@ -61,7 +61,7 @@ CREATE TABLE `Books` (
 	`BookID` 		int NOT NULL AUTO_INCREMENT,
 	`AuthorID` 		int NOT NULL,	
 	`PublisherID` 	int NOT NULL,
-	`EditorID` 		int NOT NULL ,
+	`EditorID` 		int,
 	`GenreID` 		int NOT NULL ,	
 	`Title` 		varchar(150) NULL ,	
 	`AuthRoyalties` float NOT NULL ,
@@ -97,7 +97,7 @@ CREATE TABLE `Customers` (
 -- --------------------------------------
 
 CREATE TABLE `ORDERS` (
-	`OrderID` 		    int NOT NULL AUTO_INCREMENT,
+	`OrderID` 		    int NOT NULL,
 	`CustomerID` 		int NOT NULl,
     `BookID`			int NOT NULL,
   	PRIMARY KEY (`OrderID`),	
